@@ -1,14 +1,6 @@
-buildscript {
-  repositories {
-    gradlePluginPortal()
-  }
-
-  dependencies {
-    classpath "com.github.node-gradle:gradle-node-plugin:3.5.1"
-  }
+plugins {
+  id "com.github.node-gradle.node" version "3.5.1"
 }
-
-apply plugin: 'com.github.node-gradle.node'
 
 node {
 	download = true
